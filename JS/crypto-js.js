@@ -1,13 +1,13 @@
-;(function (root, factory) {
-	if (typeof exports === "object") {
-		// CommonJS
-		module.exports = exports = factory();
+; (函数 (根, 工厂）   {
+	if      (    typeof导出 === "object"     )      {
+		// 通用JS
+		出口=出口=工厂（）；
 	}
-	else if (typeof define === "function" && define.amd) {
-		// AMD
-		define([], factory);
+	else      if      (     typeof Define === "function" && Define.amd     )      {
+		//AMD
+		规定（[     ]，工厂）；
 	}
-	else {
+	另外{
 		// Global (browser)
 		globalThis.CryptoJS = factory();
 	}
@@ -28,12 +28,12 @@
 	    }
 
 	    // Native crypto in web worker (Browser)
-	    if (typeof self !== 'undefined' && self.crypto) {
-	        crypto = self.crypto;
+	    if  (  typeof self !== '未定义' && self. 加密）   {  
+	        加密=自我。加密货币；
 	    }
 
-	    // Native crypto from worker
-	    if (typeof globalThis !== 'undefined' && globalThis.crypto) {
+	    // 来自worker的原始加密
+	    if      (     typeof globalThis !== '未定义' && globalThis.crypto )  {        
 	        crypto = globalThis.crypto;
 	    }
 
